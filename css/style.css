@@ -159,10 +159,10 @@ main h1 {
 }
 
 .selected--year .phone--circle {
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   cursor: pointer;
   -webkit-transform-origin: left;
           transform-origin: left;
