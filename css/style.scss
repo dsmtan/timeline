@@ -37,11 +37,12 @@ main {
   background-color: $darkgrey;
   color: white;
   font-family: $fontmain;
+  overflow-x: hidden;
 
   h1 {
     margin: 0;
     color: $mint;
-    text-align: right;
+    text-align: center;
     padding: 1.5em 3em;
     font-size: 2.5em;
   }
@@ -49,7 +50,7 @@ main {
 
 .svg--timeline {
   position: absolute;
-  left: 300px;
+  left: 400px;
   width: 18px;
   height: 1932px;
   margin-top: 3.1em;
@@ -68,7 +69,7 @@ main {
 .div--wrapper {
   max-width: 100%;
   height: auto;
-  margin-left: 150px;
+  margin-left: 250px;
   padding-bottom: 5em;
 }
 
@@ -174,7 +175,7 @@ main {
 
 @keyframes dataAnimation {
   100% {
-    transform: scale(1.5) translateX(400px);
+    transform: scale(1.7) translateX(400px);
   }
 }
 
