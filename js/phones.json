@@ -2,73 +2,97 @@
   {
     "id": "mobira",
     "year": 1982,
+    "image": "images/1-mobira-senator.png",
     "name": "Mobira Senator",
-    "description": "First car "
+    "description": "First car",
+    "color": "#5cc8ff"
   },
   {
     "id": "dynatac",
     "year": 1983,
+    "image": "images/2-motorola_dynatac.jpg",
     "name": "Motorola Dynatac 8000X",
-    "description": "First commercial handheld phone"
+    "description": "First commercial handheld phone",
+    "color": "#5efc8d"
   },
   {
     "id": "microtac",
     "year": 1989,
+    "image": "images/3-motorola_microtac.jpg",
     "name": "Motorola MicroTac",
-    "description": "First flip phone"
+    "description": "First flip phone",
+    "color": "#f4e76e"
   },
   {
     "id": "nokia1011",
     "year": 1992,
+    "image": "images/4-nokia1011.jpg",
     "name": "Nokia 1011",
-    "description": "First digital and mass-produced handheld phone"
+    "description": "First digital and mass-produced handheld phone",
+    "color": "#5cc8ff"
   },
   {
     "id": "bellsouth",
     "year": 1993,
+    "image": "images/5-ibm_simon.jpg",
     "name": "Bellsouth/IBM Simon Personal Communicator",
-    "description": "First “smartphone” with touchscreen and apps (incl. fax and e-mail)"
+    "description": "First “smartphone” with touchscreen and apps (incl. fax and e-mail)",
+    "color": "#5efc8d"
   },
   {
     "id": "siemens",
     "year": 1997,
+    "image": "images/6-siemens_s10.jpg",
     "name": "Siemens S10",
-    "description": "First mobile phone with a color screen"
+    "description": "First mobile phone with a color screen",
+    "color": "#f4e76e"
   },
   {
     "id": "nokia3210",
     "year": 1999,
+    "image": "images/7-nokia3210.jpg",
     "name": "Nokia 3210",
-    "description": "One of the best sold mobile phones in history. Had an internal antenna, changeable cover and 3 games (incl. Snake)."
+    "description": "One of the best sold mobile phones in history. Had an internal antenna, changeable cover and 3 games (incl. Snake).",
+    "color": "#5cc8ff"
   },
   {
     "id": "sharp",
     "year": 2000,
+    "image": "images/10-sharp_JSH04.png",
     "name": "Sharp J-SH04",
-    "description": "First mobile phone with built-in camera (Japan only)"
+    "description": "First mobile phone with built-in camera (Japan only)",
+    "color": "#5efc8d"
   },
   {
     "id": "set39",
     "year": 2001,
+    "image": "images/11-sonyericsson_t39.jpg",
     "name": "Sony Ericsson T39",
-    "description": "First Bluetooth phone"
+    "description": "First Bluetooth phone",
+    "color": "#f4e76e"
   },
   {
     "id": "blackberry",
     "year": 2003,
+    "image": "images/12-blackberry-6210.jpg",
     "name": "Blackberry Quark 6210",
-    "description": "First fully integrated Blackberry phone introducing Blackberry Messenger."
+    "description": "First fully integrated Blackberry phone introducing Blackberry Messenger.",
+    "color": "#5cc8ff"
   },
   {
     "id": "iphone",
     "year": 2007,
+    "image": "images/13-firstiphone.jpeg",
     "name": "Apple iPhone",
-    "description": "First mobile phone by Apple with a full-size touch screen, iPod functionalities and apps. The AppStore for third-party apps followed in 2008."
+    "description": "First mobile phone by Apple with a full-size touch screen, iPod functionalities and apps. The AppStore for third-party apps followed in 2008.",
+    "color": "#5efc8d"
   },
   {
     "id": "htcevo",
     "year": 2011,
+    "image": "images/14-htc_evo2.jpg",
     "name": "HTC Evo 4G",
-    "description": "First mobile phone with 4G."
+    "description": "First mobile phone with 4G.",
+    "color": "#f4e76e"
   }
 ]

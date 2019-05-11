@@ -28,32 +28,112 @@ main h1 {
   font-size: 2.5em;
 }
 
-#timeline {
+.svg--timeline {
   position: absolute;
-  left: 20%;
-  width: 5px;
+  left: 300px;
+  width: 18px;
+  height: 1932px;
+  margin-top: 3.1em;
   margin-bottom: 3em;
+}
+
+#timeline {
+  width: 5px;
 }
 
 .div--wrapper {
   max-width: 100%;
-  height: 1500px;
+  height: auto;
+  margin-left: 150px;
+  padding-bottom: 5em;
+}
+
+.article--phone {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(max-content, 8em) 5fr;
-      grid-template-columns: minmax(-webkit-max-content, 8em) 5fr;
-      grid-template-columns: minmax(max-content, 8em) 5fr;
+  -ms-grid-columns: minmax(max-content, 10em) 5fr;
+      grid-template-columns: minmax(-webkit-max-content, 10em) 5fr;
+      grid-template-columns: minmax(max-content, 10em) 5fr;
   -ms-grid-rows: minmax(100px, max-content);
       grid-template-rows: minmax(100px, -webkit-max-content);
       grid-template-rows: minmax(100px, max-content);
-  margin-left: 10%;
+  grid-column-gap: 2em;
+  margin-bottom: 4em;
 }
 
 .p--year {
   -ms-grid-column: 1;
   grid-column: 1;
-  text-align: center;
   font-size: 2em;
-  margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.div--data {
+  position: relative;
+  margin: auto 0;
+}
+
+.phone--circle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+  width: 90px;
+  margin: 0 0.5em;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #85ffc7;
+  z-index: 5;
+}
+
+.phone--circle img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 75%;
+}
+
+.phone--description {
+  position: absolute;
+  top: 0;
+  left: 53px;
+  height: 90px;
+  width: 0;
+  background-color: #85ffc7;
+  padding-left: 0;
+  z-index: 1;
+}
+
+.phone--description h2 {
+  display: none;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.phone--description p {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  margin: 0;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
