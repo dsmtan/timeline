@@ -83,12 +83,13 @@ main {
   grid-column: 1;
   font-size: 2em;
   @include flexCenter();
+  cursor: pointer;
+  //animation on this element
 }
 
 .div--data {
   position: relative;
   margin: auto 0;
-  // transform: scale(1.5);
   //animation on this element
 }
 
@@ -117,25 +118,74 @@ main {
   position: absolute;
   top: 0;
   left: 53px;
-  // @include flexCenter();
   height: 90px;
   width: 0;
   background-color: $mint;
-  padding-left: 0; //animate to 100px
+  padding-left: 0; //animate
   z-index: 1;
 
   h2 {
-    display: none; //animate
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 10px;
     color: black;
+    opacity: 0; //animate
   }
 
   p {
-    display: none; //animate
     font-family: $fontpar;
-    font-size: 0.8em;
+    font-size: 0.6em;
     margin: 0;
+    padding-right: 1em;
     color: black;
+    opacity: 0; //animate
+  }
+}
+
+.selected--year {
+  //add to article
+
+  .p--year {
+    animation: scaleAnimation 1s linear forwards;
+  }
+
+  .div--data {
+    animation: dataAnimation 1s linear forwards;
+  }
+
+  .phone--description {
+    animation: showDescription 1s linear forwards;
+
+    h2 {
+      animation: showText 0.5s ease-in forwards 0.7s;
+    }
+
+    p {
+      animation: showText 0.5s ease-in forwards 0.7s;
+    }
+  }
+}
+
+@keyframes scaleAnimation {
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes dataAnimation {
+  100% {
+    transform: scale(1.5) translateX(400px);
+  }
+}
+
+@keyframes showDescription {
+  100% {
+    width: 21em;
+    padding-left: 80px;
+  }
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
   }
 }

@@ -74,6 +74,7 @@ main h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .div--data {
@@ -123,17 +124,97 @@ main h1 {
 }
 
 .phone--description h2 {
-  display: none;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 10px;
   color: black;
+  opacity: 0;
 }
 
 .phone--description p {
-  display: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.6em;
   margin: 0;
+  padding-right: 1em;
   color: black;
+  opacity: 0;
+}
+
+.selected--year .p--year {
+  -webkit-animation: scaleAnimation 1s linear forwards;
+          animation: scaleAnimation 1s linear forwards;
+}
+
+.selected--year .div--data {
+  -webkit-animation: dataAnimation 1s linear forwards;
+          animation: dataAnimation 1s linear forwards;
+}
+
+.selected--year .phone--description {
+  -webkit-animation: showDescription 1s linear forwards;
+          animation: showDescription 1s linear forwards;
+}
+
+.selected--year .phone--description h2 {
+  -webkit-animation: showText 0.5s ease-in forwards 0.7s;
+          animation: showText 0.5s ease-in forwards 0.7s;
+}
+
+.selected--year .phone--description p {
+  -webkit-animation: showText 0.5s ease-in forwards 0.7s;
+          animation: showText 0.5s ease-in forwards 0.7s;
+}
+
+@-webkit-keyframes scaleAnimation {
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes scaleAnimation {
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes dataAnimation {
+  100% {
+    -webkit-transform: scale(1.5) translateX(400px);
+            transform: scale(1.5) translateX(400px);
+  }
+}
+
+@keyframes dataAnimation {
+  100% {
+    -webkit-transform: scale(1.5) translateX(400px);
+            transform: scale(1.5) translateX(400px);
+  }
+}
+
+@-webkit-keyframes showDescription {
+  100% {
+    width: 21em;
+    padding-left: 80px;
+  }
+}
+
+@keyframes showDescription {
+  100% {
+    width: 21em;
+    padding-left: 80px;
+  }
+}
+
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
