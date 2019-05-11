@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mobira",
+    "year": 1982,
+    "name": "Mobira Senator",
+    "description": "First car "
+  },
+  {
+    "id": "dynatac",
+    "year": 1983,
+    "name": "Motorola Dynatac 8000X",
+    "description": "First commercial handheld phone"
+  },
+  {
+    "id": "microtac",
+    "year": 1989,
+    "name": "Motorola MicroTac",
+    "description": "First flip phone"
+  },
+  {
+    "id": "nokia1011",
+    "year": 1992,
+    "name": "Nokia 1011",
+    "description": "First digital and mass-produced handheld phone"
+  },
+  {
+    "id": "bellsouth",
+    "year": 1993,
+    "name": "Bellsouth/IBM Simon Personal Communicator",
+    "description": "First “smartphone” with touchscreen and apps (incl. fax and e-mail)"
+  },
+  {
+    "id": "siemens",
+    "year": 1997,
+    "name": "Siemens S10",
+    "description": "First mobile phone with a color screen"
+  },
+  {
+    "id": "nokia3210",
+    "year": 1999,
+    "name": "Nokia 3210",
+    "description": "One of the best sold mobile phones in history. Had an internal antenna, changeable cover and 3 games (incl. Snake)."
+  },
+  {
+    "id": "sharp",
+    "year": 2000,
+    "name": "Sharp J-SH04",
+    "description": "First mobile phone with built-in camera (Japan only)"
+  },
+  {
+    "id": "set39",
+    "year": 2001,
+    "name": "Sony Ericsson T39",
+    "description": "First Bluetooth phone"
+  },
+  {
+    "id": "blackberry",
+    "year": 2003,
+    "name": "Blackberry Quark 6210",
+    "description": "First fully integrated Blackberry phone introducing Blackberry Messenger."
+  },
+  {
+    "id": "iphone",
+    "year": 2007,
+    "name": "Apple iPhone",
+    "description": "First mobile phone by Apple with a full-size touch screen, iPod functionalities and apps. The AppStore for third-party apps followed in 2008."
+  },
+  {
+    "id": "htcevo",
+    "year": 2011,
+    "name": "HTC Evo 4G",
+    "description": "First mobile phone with 4G."
+  }
+]
