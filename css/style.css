@@ -158,6 +158,23 @@ main h1 {
           animation: dataAnimation 1s linear forwards;
 }
 
+.selected--year .phone--circle {
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  cursor: pointer;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.selected--year .phone--circle:hover {
+  position: relative;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  z-index: 10;
+}
+
 .selected--year .phone--description {
   -webkit-animation: showDescription 1s linear forwards;
           animation: showDescription 1s linear forwards;
