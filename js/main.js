@@ -48,9 +48,11 @@ function initListeners() {
 }
 
 function yearClicked(event) {
-  console.log(event.target);
+  console.log(event.target.offsetTop);
   event.target.parentNode.classList.add("selected--year");
   let oldTarget = event.target;
+
+  moveCircle(event.target);
 
   //user clicks on different year
   document.addEventListener(
@@ -58,6 +60,7 @@ function yearClicked(event) {
     function(event) {
       if (event.target.classList.contains("p--year")) {
         if (event.target !== oldTarget) {
+          //add class selected--year to parentnode to start animations
           oldTarget.parentNode.classList.remove("selected--year");
         }
       }
@@ -66,4 +69,10 @@ function yearClicked(event) {
   );
 }
 
-//add class selected--year to parentnode of event.target
+const svg = document.querySelector("svg");
+const timeCircle = document.querySelector("#movingcircle");
+
+function moveCircle(targetedevent) {
+  let newPosition = targetedevent.offsetTop - 210;
+  timeCircle.style.transform = `translateY(${newPosition}px)`;
+}
