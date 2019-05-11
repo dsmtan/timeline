@@ -64,7 +64,7 @@ main {
 
 #movingcircle {
   transition: transform 1s;
-  // transform: translateY(100px);
+  // animation on this element
 }
 
 .div--wrapper {
@@ -145,7 +145,7 @@ main {
 }
 
 .selected--year {
-  //add to article
+  //added to article when user has clicked respective year
 
   .p--year {
     animation: scaleAnimation 1s linear forwards;

@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function() {
-  //fetch json
+  //fetch data from json
   fetch("js/phones.json")
     .then(res => res.json())
     .then(phonedata => {
@@ -13,14 +13,11 @@ const template = document.querySelector("#phonetemplate").content;
 const wrapper = document.querySelector(".div--wrapper");
 
 function showPhones(phonedata) {
+  //create an article for each phone in the JSON-file from template
   phonedata.forEach(phone => {
     const copy = template.cloneNode(true);
     copy.querySelector("article").id = phone.id;
     copy.querySelector(".p--year").textContent = phone.year;
-    copy.querySelector(".p--year").classList.add(`year--${phone.id}`);
-
-    copy.querySelector(".div--data").classList.add(`data--${phone.id}`);
-
     copy.querySelector(".phone--image").src = phone.image;
     copy.querySelector("h2").textContent = phone.name;
     copy.querySelector(".descriptiontext").textContent = phone.description;
@@ -28,10 +25,11 @@ function showPhones(phonedata) {
     copy.querySelector(".phone--description").style.backgroundColor =
       phone.color;
 
+    //append article to wrapper
     wrapper.appendChild(copy);
   });
 
-  //addeventlisteners
+  //add eventlisteners for all year numbers
   initListeners();
 }
 
@@ -48,19 +46,18 @@ function initListeners() {
 }
 
 function yearClicked(event) {
-  console.log(event.target.offsetTop);
+  //add class selected--year to parentnode to start animations
   event.target.parentNode.classList.add("selected--year");
   let oldTarget = event.target;
 
   moveCircle(event.target);
 
-  //user clicks on different year
+  //remove class when user clicks on different year
   document.addEventListener(
     "click",
     function(event) {
       if (event.target.classList.contains("p--year")) {
         if (event.target !== oldTarget) {
-          //add class selected--year to parentnode to start animations
           oldTarget.parentNode.classList.remove("selected--year");
         }
       }
@@ -73,6 +70,7 @@ const svg = document.querySelector("svg");
 const timeCircle = document.querySelector("#movingcircle");
 
 function moveCircle(targetedevent) {
+  //set new position of circle according to year clicked
   let newPosition = targetedevent.offsetTop - 210;
   timeCircle.style.transform = `translateY(${newPosition}px)`;
 }
