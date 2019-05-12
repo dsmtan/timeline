@@ -86,6 +86,10 @@ main h1 {
   cursor: pointer;
 }
 
+.p--year:hover {
+  color: #85ffc7;
+}
+
 .div--data {
   position: relative;
   margin: auto 0;
@@ -143,7 +147,7 @@ main h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 0.6em;
   margin: 0;
-  padding-right: 1em;
+  padding-right: 1.2em;
   color: black;
   opacity: 0;
 }
@@ -221,14 +225,14 @@ main h1 {
 @-webkit-keyframes showDescription {
   100% {
     width: 21em;
-    padding-left: 80px;
+    padding-left: 70px;
   }
 }
 
 @keyframes showDescription {
   100% {
     width: 21em;
-    padding-left: 80px;
+    padding-left: 70px;
   }
 }
 
